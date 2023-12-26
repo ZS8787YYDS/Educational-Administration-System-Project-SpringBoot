@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: educational-admin
+  datasource:
+    # 数据库相关配置
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/educ_admin
+    username: zisheng
+    password: 8787521
+    type: com.alibaba.druid.pool.DruidDataSource
+  main:
+    banner-mode: off
+# Mybatis-plus的相关配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      table-prefix: t_
+      id-type: assign_id
+    banner: off
