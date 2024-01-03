@@ -22,7 +22,7 @@ public class Grade {
     private Long sid;
     @ApiModelProperty(value = "课程id")
     private Long cid;
-    @ApiModelProperty(value = "成绩说明")
+    @ApiModelProperty(value = "学期，1-上学期，2-下学期")
     private Long state;
     @ApiModelProperty(value = "分数")
     private Double mark;

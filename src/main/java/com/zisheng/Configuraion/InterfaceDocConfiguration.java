@@ -16,7 +16,7 @@ import springfox.documentation.spring.web.plugins.Docket;
  * 配置Knife4j生成接口文档
  */
 @Configuration
-@EnableWebMvc
+@EnableWebMvc// 使得Mvc框架和Swagger更好的集成。
 public class InterfaceDocConfiguration implements WebMvcConfigurer {
 
     /**

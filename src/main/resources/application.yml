@@ -20,3 +20,5 @@ mybatis-plus:
       table-prefix: t_
       id-type: assign_id
     banner: off
+  # XML映射文件的位置
+  mapper-locations: classpath:/MapperXml/*.xml

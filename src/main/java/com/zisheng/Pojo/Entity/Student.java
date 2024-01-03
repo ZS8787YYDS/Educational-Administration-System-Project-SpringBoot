@@ -20,9 +20,9 @@ public class Student {
     private Long id;
     @ApiModelProperty(value = "学号")
     private String sno;
-    @ApiModelProperty(value = "登录名称")
+    @ApiModelProperty(value = "登录名称,默认是学号，不可更改")
     private String loginName;
-    @ApiModelProperty(value = "登录密码")
+    @ApiModelProperty(value = "登录密码，默认是学号，可更改")
     private String loginPwd;
     @ApiModelProperty(value = "姓名")
     private String name;
@@ -30,7 +30,7 @@ public class Student {
     private String sex;
     @ApiModelProperty(value = "年龄")
     private Integer age;
-    @ApiModelProperty(value = "tel")
+    @ApiModelProperty(value = "电话")
     private String tel;
     @ApiModelProperty(value = "地址")
     private String address;

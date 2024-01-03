@@ -7,20 +7,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Builder
-@ApiModel(value = "教师实体")
-public class Teacher {
+@ApiModel(value = "课本实体")
+public class Book {
     @ApiModelProperty(value = "主键id")
     private Long id;
-    @ApiModelProperty(value = "登录名称")
-    private String loginName;
-    @ApiModelProperty(value = "登录密码")
-    private String loginPwd;
-    @ApiModelProperty(value = "姓名")
+    @ApiModelProperty(value = "课本名称")
     private String name;
-    @ApiModelProperty(value = "电话")
-    private String tel;
+    @ApiModelProperty(value = "课本价格")
+    private double price;
+    @ApiModelProperty(value = "课本内容")
+    private String contents;
 }

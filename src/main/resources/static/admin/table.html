@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>教务管理系统</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/css.css" />
+	<script type="text/javascript" src="js/jquery1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/sdmenu.js"></script>
+	<script type="text/javascript" src="js/laydate/laydate.js"></script>
+	<link rel="stylesheet" href="css/jquery.dialog.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.dialog.js"></script>
+	<style type="text/css">
+		#vvv{text-align:right;margin:0;padding:0;}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("#btnAdd").click(function(){
+				var obj = '<iframe name="myFrame" src="form2.html" frameborder="0" scrolling="no" height="450" width="950" style="margin:0;padding:0;"/></iframe>';
+				$(obj).dialog({
+					title : "我的表单"
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+    <div class="right" id="mainFrame">
+        <div class="right_cont">
+            <ul class="breadcrumb">
+               	 当前位置：<a href="login.html">首页</a>
+                <span class="divider">/</span>
+                <a href="#">功能界面</a>
+                <span class="divider">/</span>表格
+            </ul>
+            <div class="title_right">
+                <strong>表格</strong>
+            </div>
+			<div style="width:99%;margin:auto;text-align:right;">
+			<button id="btnAdd" class="btn btn-info " style="width:80px;">添加</button><p/>
+			</div>
+            <div style="width:99%; margin:auto">
+                <!--表格开始-->
+				<table class="table table-bordered table-striped table-hover">
+					<tbody>
+						<tr align="center">
+							<td><strong>编号</strong></td>
+							<td><strong>分类名</strong></td>
+							<td><strong>项目名</strong></td>
+							<td><strong>列名1</strong></td>
+							<td><strong>列名2</strong></td>
+							<td><strong>列名3</strong></td>
+							<td><strong>操作</strong></td>
+         				</tr>
+						<tr align="left">
+							<td>1</td>
+							<td>数据</td>
+							<td>数据</td>
+							<td>数据</td>
+							<td>数据</td>
+							<td>数据</td>
+							<td>数据</td>
+         				</tr>
+						<tr align="left"><td>2</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>3</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>4</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>5</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>6</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>7</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>8</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>9</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+						<tr align="left"><td>10</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td><td>数据</td></tr>
+					</tbody>
+				</table>
+            </div>
+        </div>
+    </div><!-- 底部 -->
+    <div id="footer">
+		<div id="footer">版权所有：vvv &copy; 2015&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" target="_blank">vvv</a></div>
+    </div>
+    <script>
+        !function(){
+            laydate.skin('molv');
+            laydate({
+                elem: '#Calendar'
+            });
+            laydate.skin('molv');
+            laydate({
+                elem: '#Calendar2'
+            });
+        }();
+    </script>
+</body>
+</html>

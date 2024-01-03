@@ -47,6 +47,7 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.4.1</version>
         </dependency>
+        <!--Web开发的起步依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -57,11 +58,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.23</version>
         </dependency>
+        <!--Lombok的起步依赖-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!--单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
